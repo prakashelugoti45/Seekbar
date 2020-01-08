@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imgBackArrow"
+        android:padding="16sp"
+        android:src="@drawable/ic_left_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.app.stamuraitask.UI.SeekbarWithIntervals
+            android:id="@+id/seekbarWithIntervals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginTop="20sp"
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:layout_gravity="center_horizontal"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:drawablePadding="8sp"
+            android:drawableEnd="@drawable/ic_tick"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:drawableRight="@drawable/ic_tick" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnMyRatings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="@color/orange"
+        android:drawablePadding="8sp"
+        android:drawableEnd="@drawable/ic_right_arrow"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:text="@string/my_ratings"
+        android:textColor="@color/white"
+        android:drawableRight="@drawable/ic_right_arrow" />
+
+</RelativeLayout>
